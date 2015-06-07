@@ -1,0 +1,19 @@
+[
+    {
+        "modid": "terraformer",
+        "name": "Terraformer",
+        "description": "Adds a Terraformer which changes the biome around it ",
+        "version": "${version}",
+        "mcversion": "${mcversion}",
+        "url": "",
+        "updateUrl": "",
+        "authorList": [
+            "Faol"
+        ],
+        "credits": "None",
+        "logoFile": "",
+        "screenshots": [],
+        "parent": "",
+        "dependencies": []
+    }
+]

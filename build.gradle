@@ -16,7 +16,6 @@ buildscript {
 }
 
 apply plugin: 'forge'
-
 ext.configFile = file "build.properties"
 configFile.withReader {
     def prop = new Properties()
@@ -26,7 +25,7 @@ configFile.withReader {
 
 version = config.mod_version
 group= "de.faolblog.terraformer" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "Terraformer"
+archivesBaseName = "terraformer"
 
 minecraft {
     version = config.minecraft_version + "-" + config.forge_version
