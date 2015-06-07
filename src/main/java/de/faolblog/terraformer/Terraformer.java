@@ -7,6 +7,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import de.faolblog.terraformer.handler.ConfigurationHandler;
+import de.faolblog.terraformer.init.ModItems;
 import de.faolblog.terraformer.proxy.IProxy;
 import de.faolblog.terraformer.reference.Reference;
 import de.faolblog.terraformer.utility.LogHelper;
@@ -24,6 +25,7 @@ public class Terraformer {
     public void preInit(FMLPreInitializationEvent event){
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
+        ModItems.init();
         LogHelper.info("Pre Initialization Complete");
     }
     @Mod.EventHandler
